@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click - Even Numbers Sum</title>
+</head>
+<body>
+
+    <button id="myButton">Click me</button>
+
+    <script>// Function to create an array of numbers between 0 and 100 and return the sum of even numbers
+        function createArrayAndSumEven() {
+            let numbers = [];  // Initialize an empty array
+            let evenSum = 0;   // Initialize sum for even numbers
+
+            // Loop through numbers 0 to 100
+            for (let i = 0; i <= 100; i++) {
+                numbers.push(i);  // Add number to the array
+
+                // Check if the number is even
+                if (i % 2 === 0) {
+                    evenSum += i;  // Add to the sum if the number is even
+                }
+            }
+
+            console.log("Array:", numbers);   // Print the array to the console
+            console.log("Sum of even numbers:", evenSum);  // Print the sum of even numbers to the console
+        }
+
+        // Select the button element
+        const button = document.getElementById('myButton');
+
+        // Add an event listener for the 'click' event
+        button.addEventListener('click', createArrayAndSumEven);</script>
+
+</body>
+</html>
