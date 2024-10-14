@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click - Array and Sum</title>
+</head>
+<body>
+
+    <button id="myButton">Click me</button>
+
+    <script>// Function to create an array of numbers between 0 and 100 and return their sum
+        function createArrayAndSum() {
+            let numbers = [];  // Initialize an empty array
+            let sum = 0;       // Initialize sum to 0
+
+            // Loop through numbers 0 to 100 and add to array and sum
+            for (let i = 0; i <= 100; i++) {
+                numbers.push(i); // Add number to the array
+                sum += i;        // Add number to the sum
+            }
+
+            console.log("Array:", numbers);   // Print the array to the console
+            console.log("Sum:", sum);
